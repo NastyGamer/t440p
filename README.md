@@ -6,6 +6,8 @@ This setus has been tested and confirmed to work on High Sierra, Mojave and Cata
 
 ### What works
 
+- Wifi
+- Trackpad-gestures
 - Power management
 - Temperature sensors
 - Battery status
@@ -15,8 +17,8 @@ This setus has been tested and confirmed to work on High Sierra, Mojave and Cata
 - Graphic acceleration (QE/CI)
 - Audio Jack
 - Display Port
--Ethernet
-- Docking-station Ethernet / USB / Power
+- Ethernet
+- Docking-station Ethernet / USB / Power / Audio Jack
 - Bluetooth
 
 ### What doesn't work
@@ -25,10 +27,7 @@ This setus has been tested and confirmed to work on High Sierra, Mojave and Cata
 - Docking-station audio / display-connectors
 - VGA
 
-### What works with the experimental branch
 
-- Wifi
-- Trackpad-gestures
 
 ## Setup
 
@@ -61,22 +60,8 @@ The bios has to be configured properly prior to installing MacOS.
     \`-- CSM Support  
         \`-- Yes  
 
-## Miscellaneous
 
-### Audio Jack
-
-- Open the terminal, head into `t440p/Audio Fix` and run:
-
-```bash
-# Catalina only to remount the root partition read/write
-sudo mount -uw /
-# Then run the install script
-sudo ./install.sh
-```
-
-Reboot after installation. 
-
-### SSD Enable Trim
+## SSD Enable Trim
 
 To enable trim on your SSD, run:
 
